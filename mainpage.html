@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: rgb(236, 242, 248);
+        }
+        .con1{
+            position : fixed;
+            bottom : 510px;
+            margin-left : 20px;
+
+        }
+        .item2{
+           background-color: rgb(236, 242, 248);
+            padding : 15px 20px;
+            border : none;
+
+        }
+     
+       
+        .container {
+            position : fixed;
+            bottom: 1px;
+            display : grid;
+            grid-template-rows: repeat(6, 78px);
+            grid-template-columns: repeat(4, 301px);
+            gap: 5px;
+            
+        }
+
+        .item{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            bottom : 0px;
+            border-radius: 5px;
+            background-color : white;
+            font-weight: 20px;
+            font-size : 23px;
+            box-shadow: 3px 2px 5px -3px lightgrey;
+            border: none;
+        }
+
+        #equal{
+            color : white;
+            background-color : rgb(14, 92, 238);
+        }
+   
+    </style>
+
+</head>
+
+<body>
+    <div class="con1"> 
+        <button class = "item2">MC</button>
+        <button class = "item2">MR</button>
+        <button class = "item2">M+</button>
+        <button class = "item2">M-</button>
+        <button class = "item2">MS</button>
+    </div>
+  
+    <div class="container">
+        <button class="item">%</button>
+        <button class="item">CE</button>
+        <button class="item">C</button>
+        <button class="item"><img width  = "35px" src = "icons8-clear-symbol-50.png"></button>
+        <button class="item">1/x</button>
+        <button class="item">x<sup>2</sup></button>
+        <button class="item">√x</button>
+        <button class="item">&#247;</button>
+
+
+        <button class="item">7</button>
+        <button class="item">8</button>
+        <button class="item">9</button>
+        <button class="item">&times;</button>
+        <button class="item">4</button>
+        <button class="item">5</button>
+        <button class="item">6</button>
+        <button class="item">-</button>
+
+        <button class="item">1</button>
+        <button class="item">2</button>
+        <button class="item">3</button>
+        <button class="item">+</button>
+
+        <button class="item">+/-</button>
+        <button class="item">0</button>
+        <button class="item">.</button>
+        <button class="item" id = "equal">=</button>
+    </div>
+
+
+
+</body>
+
+</html>
